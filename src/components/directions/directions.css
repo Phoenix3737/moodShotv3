@@ -1,0 +1,37 @@
+.bar-main{
+    width: 100%;
+    margin-top: 35px;
+    position:fixed;
+    bottom:0px;
+    left:0%;
+}
+
+.directions h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.url {
+    height: 30px;
+    background-color: #afafaf;
+    color: black;
+      
+}
+
+.center-url {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+
+.btn-sumbit{
+    float: left;
+    margin-left: 20px;
+}
+
+.facebook {
+    width: 20%;
+    margin-top: 40px;
+}

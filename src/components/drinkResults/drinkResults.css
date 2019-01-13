@@ -1,0 +1,59 @@
+.bar-main{
+    width: 100%;
+    margin-top: 35px;
+    position:fixed;
+    bottom:0px;
+    left:0%;
+}
+.profile-pic {
+    /* float: left; */
+    margin-top: 25px;
+    width: 180px;
+   
+}
+
+.drink-pic {
+    /* float: left; */
+    margin-top: 25px;
+    width: 180px;
+    
+}
+
+.header {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold;
+    border-bottom: solid 2px #ba013b;
+    padding-bottom: 20px;
+}
+
+.drinkName {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+    
+    border-bottom: solid 2px #ba013b;
+    margin-top: 8px;
+    padding-bottom: 10px;
+}
+
+.recipe {
+    /* border-bottom: solid 2px #ba013b; */
+    margin-top: 10px;
+}
+.instructions:last-child {
+    margin-top: 10px;
+    border-bottom: solid 2px #ba013b;
+    padding-bottom: 20px;
+}
+
+.new-drink {
+    font-size: 12px;
+    margin: 5px;
+}
+
+.new-photo {
+    font-size: 12px;
+    margin: 5px;
+}
