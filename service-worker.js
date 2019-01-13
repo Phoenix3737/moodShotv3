@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/moodShotv3/precache-manifest.779d3429b0ff4e999d1e964893b3c966.js"
+  "/moodShotv3/precache-manifest.f9e7823cecb509ed72edad06437b42f8.js"
 );
 
 workbox.clientsClaim();
