@@ -8,13 +8,13 @@ import axios from "axios";
 
 
 const messages = [
-  'You look afraid!',
-  'You look Sad!',
+  'You look afraid! Have a stong wiskey drink to calm your nerves.',
+  'You look Sad! This tasty gin cocktail should cheer you up.',
   'You look Neutral!',
-  'You look disgusted!',
-  'You look Angry!',
-  'You look Happy!',
-  'You look Surprised!'
+  'You look disgusted! Maybe a smooth scotch cocktail will make you feel better.',
+  'You look Angry! A nice rum cocktail might feel like a needed vacation.',
+  'You look Happy! Keep that going with a nice vodka cocktail.',
+  'You look Surprised! A champagne based cocktail should go well with that.'
 ];
 
 class App extends Component {
@@ -56,7 +56,7 @@ class App extends Component {
     })
    
     let faceQuery =
-      "https://cors-anywhere.herokuapp.com/https://api-us.faceplusplus.com/facepp/v3/detect?api_key=otg0XdiKVDR9VMNBD4qfht2JThuOTgct&api_secret=MwhmO2tldAFKKIzMflz6QXLxXzYrEEIT&image_url=" +
+      "https://api-us.faceplusplus.com/facepp/v3/detect?api_key=otg0XdiKVDR9VMNBD4qfht2JThuOTgct&api_secret=MwhmO2tldAFKKIzMflz6QXLxXzYrEEIT&image_url=" +
       faceURL + "&return_attributes=emotion";
 
     // console.log(faceQuery);
@@ -117,8 +117,6 @@ class App extends Component {
         let randomDrinkIndex;
         let queryRandomDrink;
         let queryIngredient;
-        // var drinkElement = $("#recipe");
-        // var imgElement = $("#drink-image")
 
         /////////////////////// This is where cocktaildb kicks in.
         queryIngredient =

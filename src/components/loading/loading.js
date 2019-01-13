@@ -10,7 +10,7 @@ class Loading extends Component {
      
       <div className="container">
       <div className="loadingWrapper">
-        <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div>
+        <div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div>
         <div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
       </div>
       
