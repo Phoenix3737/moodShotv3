@@ -4,10 +4,10 @@ import PropTypes from "proptypes";
 import barMainImg from "./bar-main.png";
 
 class DrinkResults extends Component {
-  onSubmit = () => {
-    console.log(this.props.history);
-    this.props.history.push("");
-  };
+  // onSubmit = () => {
+  //   console.log(this.props.history);
+  //   this.props.history.push("");
+  // };
   renderRecipes() {
     return this.props.data.drinkRecipe.map(item => {
       return <div>{item}</div>;

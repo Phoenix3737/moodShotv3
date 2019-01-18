@@ -20,8 +20,9 @@ const messages = [
 class App extends Component {
   constructor() {
     super();
-    this.currentFaceUrl="";
+    
     this.state = {
+      currentFaceUrl: "",
       isLoading: false,
       viewIndex: 0,
       header: "",
@@ -40,7 +41,7 @@ class App extends Component {
   }
 
   onClickNewDrink = () => {
-    this.onSubmit(this.currentFaceUrl)
+    this.onSubmit(this.state.currentFaceUrl)
   }
 
   onClickNewPhoto = () => {
@@ -50,9 +51,9 @@ class App extends Component {
   }
 
   onSubmit = (faceURL) => {
-    this.currentFaceUrl = faceURL;
     this.setState({
-      isLoading: true
+      isLoading: true,
+      currentFaceUrl: faceURL
     })
    
     let faceQuery =
@@ -171,6 +172,9 @@ class App extends Component {
       })
 
       .catch(error => {
+        this.setState({
+          isLoading: false,
+        })
         console.log(error);
       });
   };
