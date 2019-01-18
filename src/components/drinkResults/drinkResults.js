@@ -25,9 +25,10 @@ class DrinkResults extends Component {
                 </h1>
                 <h2 className="drinkName">{this.props.data.drinkName}</h2>
                 <h3 className="recipe">{this.renderRecipes()}</h3>
-                <h3 className="instructions">
+                <h3 className="instructions overflow">
                   {this.props.data.drinkInstructions}
                 </h3>
+                
               </div>
 
               <div className="col-md-2 results">
@@ -53,9 +54,6 @@ class DrinkResults extends Component {
                 <button
                   className="btn btn-danger new-photo"
                   onClick={this.props.onClickNewPhoto}
-                  // onClick={() => {
-                  //   this.props.history.replace("../directions/directions.js");
-                  // }}
                 >
                   SUBMIT A DIFFERENT PHOTO
                 </button>

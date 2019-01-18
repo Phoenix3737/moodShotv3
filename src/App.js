@@ -127,7 +127,7 @@ class App extends Component {
           axios.post(queryIngredient).then(response => {
             console.log(response.data, "RESPONSE");
             randomDrinkIndex = Math.floor(
-              Math.random() * [response.data.drinks.length] - 1 + 1
+              Math.random() * [response.data.drinks.length -1]  + 1
             );
             console.log(randomDrinkIndex, "RANDOM DRINK INDEX");
             queryRandomDrink =

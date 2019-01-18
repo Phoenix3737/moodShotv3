@@ -41,9 +41,14 @@
 }
 
 .recipe {
-    /* border-bottom: solid 2px #ba013b; */
     margin-top: 10px;
 }
+
+.overflow {
+    overflow:hidden;
+    max-height:80px;
+}
+
 .instructions:last-child {
     margin-top: 10px;
     border-bottom: solid 2px #ba013b;
