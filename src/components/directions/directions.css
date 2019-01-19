@@ -1,9 +1,16 @@
-.bar-main{
-    width: 100%;
+.bar-main-2{
+    width: 36%;
     margin-top: 35px;
     position:fixed;
     bottom:0px;
-    left:0%;
+    right: 0px;
+}
+.bar-main{
+    width: 67%;
+    margin-top: 35px;
+    position:fixed;
+    bottom:0px;
+    left: 0px;
 }
 
 .directions h1 {

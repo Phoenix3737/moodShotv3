@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./drinkResults.css";
 import PropTypes from "proptypes";
+import barMainImg2 from "./bar-main-2.png";
 import barMainImg from "./bar-main.png";
 
 class DrinkResults extends Component {
@@ -24,11 +25,12 @@ class DrinkResults extends Component {
                   {this.props.header}
                 </h1>
                 <h2 className="drinkName">{this.props.data.drinkName}</h2>
-                <h3 className="recipe">{this.renderRecipes()}</h3>
-                <h3 className="instructions overflow">
-                  {this.props.data.drinkInstructions}
+                <div className="scroll">
+                <div className="overflow">
+                <h3 className="recipe">{this.renderRecipes()}{this.props.data.drinkInstructions}
                 </h3>
-                
+                </div>
+                </div>
               </div>
 
               <div className="col-md-2 results">
@@ -64,6 +66,7 @@ class DrinkResults extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <img className="bar-main" src={barMainImg} alt="" />
+                  <img className="bar-main-2" src={barMainImg2} alt="" />
                 </div>
               </div>
             </div>

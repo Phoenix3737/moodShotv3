@@ -5,6 +5,25 @@
     bottom:0px;
     left:0%;
 } */
+
+.bar-main-2{
+  width: 33%;
+  margin-top: 35px;
+  position:fixed;
+  bottom:0px;
+  right: 0px;
+  z-index: -1;
+}
+
+.bar-main{
+  width: 67%;
+  margin-top: 35px;
+  position:fixed;
+  bottom:0px;
+  left: 0px;
+  z-index: -1;
+}
+
 .loadingWrapper {
     position: absolute;
     top: 0;

@@ -1,9 +1,16 @@
-.bar-main{
-    width: 100%;
+.bar-main-2{
+    width: 36%;
     margin-top: 35px;
     position:fixed;
     bottom:0px;
-    left:0%;
+    right: 0px;
+}
+.bar-main{
+    width: 67%;
+    margin-top: 35px;
+    position:fixed;
+    bottom:0px;
+    left: 0px;
 }
 .profile-pic {
     /* float: left; */
@@ -44,12 +51,19 @@
     margin-top: 10px;
 }
 
-.overflow {
-    overflow:hidden;
-    max-height:80px;
+.scroll {
+  height: 280px;
+  overflow: hidden;
 }
 
-.instructions:last-child {
+.overflow {
+  height: 100%;
+  margin-right: -50px; /* maximum width of scrollbar */
+  padding-right: 50px; /* maximum width of scrollbar */
+  overflow-y: scroll;
+}
+
+.recipe:last-child {
     margin-top: 10px;
     border-bottom: solid 2px #ba013b;
     padding-bottom: 20px;

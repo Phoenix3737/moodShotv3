@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "proptypes";
 import "./directions.css";
+import barMainImg2 from "./bar-main-2.png";
 import barMainImg from "./bar-main.png";
 
 
@@ -80,7 +81,8 @@ class Directions extends Component {
                 <div className="container">
               <div className="row">
                 <div className="col-md-12">
-                  <img className="bar-main" src={barMainImg} alt="" />
+                <img className="bar-main" src={barMainImg} alt="" />
+                  <img className="bar-main-2" src={barMainImg2} alt="" />
                 </div>
               </div>
             </div>
