@@ -4,6 +4,14 @@ import PropTypes from "proptypes";
 import barMainImg2 from "./bar-main-2.png";
 import barMainImg from "./bar-main.png";
 
+document.body.classList.add('js-loading');
+
+window.addEventListener("load", showPage, false);
+
+function showPage() {
+  document.body.classList.remove('js-loading');
+}
+
 class DrinkResults extends Component {
   // onSubmit = () => {
   //   console.log(this.props.history);
@@ -21,12 +29,12 @@ class DrinkResults extends Component {
           <div className="container">
             <div className="row">
               <div className="col-md-8 results">
-                <h1 className="header" h1>
+                <h1 className="header">
                   {this.props.header}
                 </h1>
                 <h2 className="drinkName">{this.props.data.drinkName}</h2>
                 <div className="scroll">
-                <div className="overflow">
+                <div className="overflow s-resize">
                 <h3 className="recipe">{this.renderRecipes()}{this.props.data.drinkInstructions}
                 </h3>
                 </div>
